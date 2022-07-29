@@ -74,6 +74,7 @@ if oldIp != currentIp:
             		'IpRanges': [
                 		{
                     		'CidrIp': currentIp,
+				'Description': 'My home IP',
                 		},
             		],
         		},
