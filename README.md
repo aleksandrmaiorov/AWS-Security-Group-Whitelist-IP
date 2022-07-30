@@ -17,7 +17,11 @@ variable with the needed ID of the security group you need to whitelist your IP 
 
 
 ## **Usage**
-After editing the script is done, just run it with python3 whitelist.py. The script is interactive and it will prompt you to add the port you need access to and your name. Your name is used in the sg rule description so that when added, you know exactly whose IP is that. Also, it plays a vital role in a check that checks if you already have an IP whitelisted. If yes, it will just update that one with the new IP instead of just repeatedly adding new IP addresses.
+After editing the script is done, just run it with 
+```sh
+python3 whitelistip.py
+```
+The script is interactive and it will prompt you to add the port you need access to and your name. Your name is used in the sg rule description so that when added, you know exactly whose IP is that. Also, it plays a vital role in a check that checks if you already have an IP whitelisted. If yes, it will just update that one with the new IP instead of just repeatedly adding new IP addresses.
 
 ## **What is covered**
 - First IP whitelist (with description)
