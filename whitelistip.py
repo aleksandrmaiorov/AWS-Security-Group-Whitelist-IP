@@ -52,7 +52,7 @@ def apply_rule():
                         'IpProtocol': 'tcp',
                         'FromPort': int(port),
                         'ToPort': int(port),
-                        'Description': '{} static IP address.'.format(name)
+                        'Description': '{} IP address.'.format(name)
                     }
                 },
             ]
@@ -68,7 +68,7 @@ def apply_rule():
                         'IpRanges': [
                             {
                                 'CidrIp': '{}/32'.format(ip),
-                                'Description': '{} static IP address.'.format(name)
+                                'Description': '{} IP address.'.format(name)
                             }
                         ]
                     }
@@ -76,4 +76,4 @@ def apply_rule():
             )
 
 apply_rule()
-print('\nSG rule applied!')
+print('\nSG rule successfuly applied! GO AND RELAX!')
